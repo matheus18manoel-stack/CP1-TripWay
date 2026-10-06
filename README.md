@@ -17,6 +17,6 @@ tripway/
 └── README.md
 ```
 
-## Integrantes
 - Matheus Manoel
-- (adicionar os demais integrantes)
+rm 576376
+
