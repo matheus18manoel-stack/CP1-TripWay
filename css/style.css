@@ -210,3 +210,53 @@ footer {
   text-align: center;
 }
 
+/* ===== PARTE 3: formulário de contato e reserva ===== */
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 40rem;
+  margin-top: 1.5rem;
+}
+
+.formulario p {
+  margin-bottom: 0;
+}
+
+.formulario label {
+  display: block;
+  margin-bottom: 0.375rem;
+  font-weight: bold;
+  color: var(--azul-escuro);
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--borda);
+  border-radius: 0.5rem;
+  background-color: var(--branco);
+  color: var(--texto);
+  font-family: inherit;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.formulario input:focus,
+.formulario select:focus,
+.formulario textarea:focus {
+  outline: none;
+  border-color: var(--azul);
+  box-shadow: 0 0 0 0.2rem rgba(14, 107, 168, 0.2);
+}
+
+.formulario textarea {
+  resize: vertical;
+}
+
+.formulario .botao {
+  width: 100%;
+}
+
