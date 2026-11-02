@@ -71,3 +71,142 @@ img {
   transition: background-color 0.3s;
 }
 
+/* ===== PARTE 2: conteúdo, links, botões, cards e rodapé ===== */
+main {
+  width: 90vw;
+  max-width: 70rem;
+  margin: 2rem auto;
+}
+
+section {
+  margin-bottom: 1.5rem;
+  padding: 2rem;
+  background-color: var(--branco);
+  border-radius: var(--raio);
+  box-shadow: var(--sombra);
+}
+
+section h2 {
+  margin-bottom: 0.75rem;
+  font-family: var(--fonte-titulo);
+  font-size: 1.75rem;
+  color: var(--azul-escuro);
+}
+
+section p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--azul);
+}
+
+a:hover {
+  color: var(--laranja-escuro);
+}
+
+.menu a:hover {
+  background-color: var(--azul);
+  color: var(--branco);
+}
+
+#banner {
+  text-align: center;
+}
+
+.banner-img {
+  width: 100%;
+  max-height: 60vh;
+  margin: 1rem 0 1.25rem;
+  object-fit: cover;
+  border-radius: var(--raio);
+}
+
+.botao {
+  display: inline-block;
+  padding: 0.75rem 1.75rem;
+  border: none;
+  border-radius: 2rem;
+  background-color: var(--laranja);
+  color: var(--azul-escuro);
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.botao:hover {
+  background-color: var(--laranja-escuro);
+  color: var(--branco);
+  transform: translateY(-0.125rem);
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  list-style: none;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 calc(33.333% - 1rem);
+  min-width: 0;
+  overflow: hidden;
+  background-color: var(--branco);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio);
+  box-shadow: var(--sombra);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-0.25rem);
+  box-shadow: 0 0.5rem 1.5rem rgba(7, 59, 92, 0.2);
+}
+
+.card img {
+  order: -1;
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+}
+
+.card h3 {
+  padding: 1rem 1rem 0.5rem;
+  font-family: var(--fonte-titulo);
+  font-size: 1.2rem;
+  color: var(--azul);
+}
+
+.card p {
+  margin-bottom: 0;
+  padding: 0 1rem 1rem;
+}
+
+.cards-pacotes .card {
+  flex-basis: calc(50% - 0.75rem);
+  border-top: 0.25rem solid var(--laranja);
+}
+
+.imagem-servicos,
+.imagem-contato {
+  width: 100%;
+  max-height: 18rem;
+  margin: 1rem 0;
+  object-fit: cover;
+  border-radius: var(--raio);
+}
+
+footer {
+  padding: 1.5rem 5vw;
+  background-color: var(--azul-escuro);
+  color: var(--branco);
+  font-size: 0.875rem;
+  text-align: center;
+}
+
