@@ -1,0 +1,73 @@
+/* ===== PARTE 1: reset, variáveis, body, header e menu ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --azul: #0e6ba8;
+  --azul-escuro: #073b5c;
+  --laranja: #f29e4c;
+  --laranja-escuro: #d9822b;
+  --fundo: #f4f8fb;
+  --branco: #ffffff;
+  --texto: #1f2d3a;
+  --borda: #d6e2ec;
+  --raio: 0.75rem;
+  --sombra: 0 0.25rem 1rem rgba(7, 59, 92, 0.12);
+  --fonte-texto: "Segoe UI", Roboto, Arial, sans-serif;
+  --fonte-titulo: Georgia, "Times New Roman", serif;
+}
+
+body {
+  font-family: var(--fonte-texto);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--texto);
+  background-color: var(--fundo);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem 5vw;
+  background-color: var(--azul-escuro);
+  color: var(--branco);
+}
+
+.cabecalho h1 {
+  flex: 1;
+  font-family: var(--fonte-titulo);
+  font-size: 1.5rem;
+}
+
+.logo {
+  width: 7.5rem;
+}
+
+.menu ul {
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+.menu a {
+  display: block;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  color: var(--branco);
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
