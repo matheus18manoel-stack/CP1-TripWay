@@ -260,3 +260,73 @@ footer {
   width: 100%;
 }
 
+/* ===== PARTE 4: responsividade (tablet e celular) ===== */
+@media (max-width: 1024px) {
+  .cabecalho {
+    padding: 1rem 4vw;
+  }
+
+  section {
+    padding: 1.5rem;
+  }
+
+  .card {
+    flex-basis: calc(50% - 0.75rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .cabecalho {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cabecalho h1 {
+    flex: none;
+    font-size: 1.25rem;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  .menu a {
+    text-align: center;
+  }
+
+  .cards-container {
+    flex-direction: column;
+  }
+
+  .card,
+  .cards-pacotes .card {
+    flex: 1 1 auto;
+  }
+
+  section h2 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    margin: 1rem auto;
+  }
+
+  section {
+    padding: 1rem;
+  }
+
+  .card img {
+    height: 10rem;
+  }
+
+  .botao {
+    width: 100%;
+    text-align: center;
+  }
+}
