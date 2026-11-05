@@ -23,6 +23,7 @@ No Checkpoint 2, o projeto foi evoluído com CSS, identidade visual, layout com 
 - Efeitos com `:hover`, `:focus` e `transition`.
 - Responsividade com `@media` para tablet (até 1024px) e celular (até 768px e 480px).
 - Botão "Conhecer os destinos" na Home e classes e IDs nos elementos.
+- Correção do feedback do Checkpoint 1: os campos do formulário agora usam `<div class="campo">` em vez de `<p>`, que é a tag para textos.
 
 ## Tecnologias Utilizadas
 
